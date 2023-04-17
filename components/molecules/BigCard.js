@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
     },
     bigText: {
         fontSize: pixelPerfect(32),
-        // paddingHorizontal: pixelPerfect(47),
         paddingVertical: pixelPerfect(50)
     },
     container: {

@@ -17,6 +17,4 @@ const styles = StyleSheet.create({
   },
 });
 
-// TextNunito.propTypes = {
-//   style:PropTypes.object
-// };
+

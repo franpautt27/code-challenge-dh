@@ -5,6 +5,6 @@ export async function getProducts(){
         const products = await api.get("/products")
         return products.data
     } catch (err) {
-        console.log(err)
+        return new Error(err.message)
     }
 }

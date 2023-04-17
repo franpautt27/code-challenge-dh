@@ -1,5 +1,5 @@
 import { StyleSheet, View, FlatList } from "react-native";
-import React from "react";
+import React, {memo} from "react";
 import BigContainer from "../atoms/BigContainer";
 import appColors from "../../constants/colors";
 import Item from "../molecules/Item";
@@ -34,7 +34,7 @@ const ItemsList = ({ onPressItem, products, itemsListTitle, style }) => {
   );
 };
 
-export default ItemsList;
+export default memo(ItemsList);
 
 const styles = StyleSheet.create({
   bigCard: {

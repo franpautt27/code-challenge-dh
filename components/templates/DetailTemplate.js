@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: pixelPerfect(19),
-    // justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: pixelPerfect(20),
   },
