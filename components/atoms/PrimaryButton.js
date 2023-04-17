@@ -5,9 +5,10 @@ import pixelPerfect from "./../../utils/pixelPerfect";
 import PropTypes from "prop-types";
 import TextNunito from "./TextNunito";
 
-const PrimaryButton = ({ label, onPress, buttonStyle, textStyle }) => {
+const PrimaryButton = ({ label, testID, onPress, buttonStyle, textStyle }) => {
   return (
     <TouchableOpacity
+    testID={testID}
       onPress={onPress}
       style={[defaultStyles.button, buttonStyle]}
     >

@@ -15,6 +15,7 @@ import {
   filterWonProducts,
 } from "../../utils/filterProducts";
 import { sumProductPoints } from "../../utils/sumProductPoints";
+import { formatTotal } from "../../utils/formatTotal";
 
 const HomeTemplate = ({ onPressItem, style, products, itemsListTitle, monthString }) => {
   useEffect(() => {
@@ -23,7 +24,8 @@ const HomeTemplate = ({ onPressItem, style, products, itemsListTitle, monthStrin
   const [productsList, setProductsList] = useState([]);
   const [isFiltered, setIsFiltered] = useState(false);
 
-  const totalPoints = sumProductPoints(productsList);
+  const numericTotalPoints = sumProductPoints(productsList);
+  const totalPoints = formatTotal(numericTotalPoints)
 
 
 

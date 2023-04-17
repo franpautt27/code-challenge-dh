@@ -13,7 +13,7 @@ import PropTypes from "prop-types";
 const Item = ({ product, createdAt, points, image, is_redemption, onPress }) => {
   const newDate = parseDate(createdAt);
   return (
-    <TouchableOpacity onPress={onPress} style={styles.container}>
+    <TouchableOpacity testID={"productPress"} onPress={onPress} style={styles.container}>
       <CustomImage uri={image} />
       <View style={styles.titleAndDescriptionContainer}>
         <TextNunito>{product}</TextNunito>
@@ -42,7 +42,6 @@ export default memo(Item);
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    // justifyContent: "space-between",
     paddingVertical: pixelPerfect(8),
     paddingHorizontal: pixelPerfect(16),
   },
@@ -56,7 +55,6 @@ const styles = StyleSheet.create({
   },
   numberContainer: {
     justifyContent: "center",
-    // paddingRight: pixelPerfect(60),
   },
 
   numberText: {
