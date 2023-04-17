@@ -1,7 +1,7 @@
 # Products App following Atomic design - DH
-This application was made following the Atomic Design, a software architecture pattern to organize the file structure in a project.
+This application was made following the Atomic Design Pattern, a software architecture pattern to organize the file structure in a project.
 Data was fetched through the following API: https://6222994f666291106a29f999.mockapi.io/api/v1/products
-Tests with Jests were made and the measurements were ensured through the pixel perfect library
+Tests with Jest were made and the measurements were ensured through the pixel perfect library
 ## Home Screen
 ![image](https://user-images.githubusercontent.com/58583172/232352083-df01a926-6d7b-4557-869a-79bf20606df8.png)
 
