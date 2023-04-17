@@ -6,20 +6,20 @@ import Item from "../molecules/Item";
 import pixelPerfect from "../../utils/pixelPerfect";
 import TextNunito from "../atoms/TextNunito";
 const ItemsList = ({ onPressItem, products, itemsListTitle, style }) => {
-    
   return (
     <View style={style}>
       <TextNunito style={styles.title}>{itemsListTitle}</TextNunito>
       <BigContainer style={styles.bigCard}>
         <FlatList
+          testID="products-list"
           data={products}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => {
             return (
               <Item
-              onPress={()=>{
-                onPressItem(item)
-              }}
+                onPress={() => {
+                  onPressItem(item);
+                }}
                 createdAt={item.createdAt}
                 product={item.product}
                 points={item.points}
@@ -39,7 +39,6 @@ export default ItemsList;
 const styles = StyleSheet.create({
   bigCard: {
     backgroundColor: appColors.textWhiteColor,
-    // width: pixelPerfect(353),
     height: pixelPerfect(350),
     padding: 0,
     padding: pixelPerfect(10),

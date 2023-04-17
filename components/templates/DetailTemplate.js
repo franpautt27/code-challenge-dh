@@ -23,6 +23,7 @@ const DetailTemplate = ({ item, onPress }) => {
         </TextNunito>
       </View>
       <PrimaryButton
+      testID={"goBackButton"}
             onPress={onPress}
             buttonStyle={styles.button}
             label="Aceptar"

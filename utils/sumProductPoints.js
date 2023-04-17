@@ -5,5 +5,5 @@ export function sumProductPoints(productsArray) {
     }
     return accumulator + object.points;
   }, 0);
-  return new Intl.NumberFormat().format(sum);
+  return sum;
 }

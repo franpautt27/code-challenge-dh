@@ -16,5 +16,3 @@ const styles = StyleSheet.create({
     borderRadius: pixelPerfect(20),
   },
 });
-
-

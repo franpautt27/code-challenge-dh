@@ -7,10 +7,9 @@ export function filterWonProducts(productsArray) {
 }
 
 export function filterRedeemedProducts(productsArray) {
-    const redeemedProducts = productsArray.filter(
-      (object) => object.is_redemption === true
-    );
-  
-    return redeemedProducts;
-  }
-  
+  const redeemedProducts = productsArray.filter(
+    (object) => object.is_redemption === true
+  );
+
+  return redeemedProducts;
+}
