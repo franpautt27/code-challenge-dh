@@ -1,4 +1,4 @@
-# code-challenge-dh
+# Products App following Atomic design - DH
 This application was made following the Atomic Design, a software architecture pattern to organize the file structure in a project.
 Data was fetched through the following API: https://6222994f666291106a29f999.mockapi.io/api/v1/products
 Tests with Jests were made and the measurements were ensured through the pixel perfect library
