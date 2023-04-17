@@ -2,9 +2,9 @@ import api from './api';
 
 export async function getProducts(){
     try {
-        const products = await api.get("/products")
+        const products = await api.get("/product")
         return products.data
     } catch (err) {
-        return new Error(err.message)
+        throw new Error(err.message)
     }
 }
